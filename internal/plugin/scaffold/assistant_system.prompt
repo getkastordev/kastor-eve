@@ -1,0 +1,7 @@
+---
+name     = "assistant_system"
+requires = ["question"]
+---
+Answer the user's question using the search_docs tool when useful.
+
+Question: {{question}}

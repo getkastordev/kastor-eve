@@ -1,0 +1,15 @@
+agent "assistant" {
+  description = "Answers questions with a remote MCP documentation tool"
+
+  model         = model.fast
+  system_prompt = prompt.assistant_system
+  tools         = [tool.search_docs]
+
+  input "question" {
+    type = string
+  }
+
+  output "answer" {
+    type = string
+  }
+}
