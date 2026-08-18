@@ -23,6 +23,7 @@ func (Handler) Metadata(context.Context) (protocol.Metadata, error) {
 		Kinds:    []protocol.Kind{protocol.KindCodegen},
 		Capabilities: protocol.Capabilities{
 			CredentialSchemes: []string{protocol.SchemeEnv},
+			Scaffold:          true,
 		},
 	}, nil
 }
